@@ -1,7 +1,7 @@
 'use strict';
 
 const properties = require('../../package.json');
-const distance = require("../services/distance");
+const distance = require("../service/distance");
 
 function about(req, res) {
     var aboutInfo = { name: properties.name, version: properties.version }

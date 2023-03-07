@@ -4,13 +4,13 @@ const controller = require('../controllers/controller');
 
 function routes(app) {
 
-    app.route('/about')
+    app.route('/orders')
 
-        .get(controller.about);
+        .get(controller.retrieveOrders);
 
     app.route('/distance')
 
-        .get(controller.get_distance);
+        .post(controller.createOrder);
 
 };
 
